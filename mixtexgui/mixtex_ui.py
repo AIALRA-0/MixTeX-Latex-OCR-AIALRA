@@ -315,7 +315,7 @@ class MixTeXApp:
         for eq in equations:
             eq = eq.strip().replace('\\[','').replace('\\]','').replace('\n','')
             if eq:
-                converted.append(f"$$ {eq} $$")
+                converted.append(f"$ {eq} $")
         return '\n'.join(converted)
 
     def pad_image(self, img, out_size):
